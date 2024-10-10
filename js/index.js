@@ -9,9 +9,12 @@ estudiante y reporte el monto de la beca, o si no le corresponde beca.*/
 import Cl_becado from "./Cl_becado.js";
 
 let estudiante = new Cl_becado("MARY",132,8);
-let estudiante2 = new Cl_becado("JALIRIO", 315, 35  );
+let estudiante2 = new Cl_becado("ALIRIO", 315, 35  );
 let salida = document.getElementById("salida");
 
 
-salida.innerHTML = `El promedio de notas de ${estudiante.nombre} es ${estudiante.promedio()} <br> y el monto de la beca es ${estudiante.montoBeca()}`
-salidainesta.innerHTML = `El promedio de notas de ${estudiante2.nombre} es ${estudiante2.promedio()} <br> y el monto de la beca es ${estudiante2.montoBeca()}`
+salida.innerHTML = `el estudiante ${estudiante.nombre} tiene un promedio de ${estudiante.promedio()}
+<br>el estudiante ${estudiante.nombre} tiene una beca de ${estudiante.montoBeca()}
+<br>el estudiante ${estudiante2.nombre} tiene un promedio de ${estudiante2.promedio()}
+<br>el estudiante ${estudiante2.nombre} tiene una beca de ${estudiante2.montoBeca()}`
+`
