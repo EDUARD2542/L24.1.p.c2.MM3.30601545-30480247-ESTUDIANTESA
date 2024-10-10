@@ -17,13 +17,11 @@ export default class Cl_becado extends Cl_estudiante{
 
     montoBeca() {
         if (super.promedio() >= 15) {
-            return super.promedio() * 30
+            return 30
         } else if (super.promedio() >= 10) {
-            return super.promedio() * 20
+            return  20
         } else {
             return 0
         }
     }
 }
-
-
